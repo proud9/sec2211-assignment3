@@ -1,0 +1,10 @@
++ gcc -E program.c -o program.i
++ gcc -S -O0 program.c -o program.s
++ gcc -c -O0 program.c -o program.o
++ gcc -O0 program.o -o program
++ ls --color=auto -l program.c program.i program.s program.o program
+-rwxrwxr-x 1 pc9 pc9 16840 Nov 13 00:18 program
+-rw-rw-r-- 1 pc9 pc9  2296 Nov 12 23:09 program.c
+-rw-rw-r-- 1 pc9 pc9 68889 Nov 13 00:18 program.i
+-rw-rw-r-- 1 pc9 pc9  4976 Nov 13 00:18 program.o
+-rw-rw-r-- 1 pc9 pc9  5722 Nov 13 00:18 program.s

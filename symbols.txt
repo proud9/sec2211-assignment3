@@ -1,0 +1,52 @@
+00000000000022f0 0000000000000020 r __abi_tag
+0000000000004018 B __bss_start
+0000000000004020 0000000000000001 b completed.0
+                 w __cxa_finalize@GLIBC_2.2.5
+0000000000004000 D __data_start
+0000000000004000 W data_start
+00000000000012b0 t deregister_tm_clones
+0000000000001320 t __do_global_dtors_aux
+0000000000003d38 d __do_global_dtors_aux_fini_array_entry
+0000000000004008 D __dso_handle
+0000000000003d40 d _DYNAMIC
+0000000000004014 D _edata
+0000000000004028 B _end
+                 U execlp@GLIBC_2.2.5
+                 U _exit@GLIBC_2.2.5
+                 U exit@GLIBC_2.2.5
+                 U fclose@GLIBC_2.2.5
+                 U fflush@GLIBC_2.2.5
+00000000000016c8 T _fini
+                 U fopen@GLIBC_2.2.5
+                 U fork@GLIBC_2.2.5
+                 U fprintf@GLIBC_2.2.5
+0000000000001360 t frame_dummy
+0000000000003d30 d __frame_dummy_init_array_entry
+00000000000022bc r __FRAME_END__
+                 U free@GLIBC_2.2.5
+                 U getpid@GLIBC_2.2.5
+                 U getppid@GLIBC_2.2.5
+0000000000003f30 d _GLOBAL_OFFSET_TABLE_
+                 w __gmon_start__
+0000000000002188 r __GNU_EH_FRAME_HDR
+0000000000001000 T _init
+0000000000004010 0000000000000004 D initialized_global
+0000000000002000 0000000000000004 R _IO_stdin_used
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+                 U __libc_start_main@GLIBC_2.34
+00000000000014fb 00000000000001cd T main
+                 U malloc@GLIBC_2.2.5
+                 U perror@GLIBC_2.2.5
+                 U printf@GLIBC_2.2.5
+                 U puts@GLIBC_2.2.5
+00000000000012e0 t register_tm_clones
+0000000000001369 0000000000000120 t show_memory
+                 U sleep@GLIBC_2.2.5
+                 U __stack_chk_fail@GLIBC_2.4
+0000000000001280 0000000000000026 T _start
+0000000000004018 0000000000000008 B stdout@GLIBC_2.2.5
+0000000000004018 D __TMC_END__
+0000000000004024 0000000000000004 B uninitialized_global
+0000000000001489 0000000000000072 t use_file
+                 U waitpid@GLIBC_2.2.5

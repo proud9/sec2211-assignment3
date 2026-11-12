@@ -1,0 +1,25 @@
+56d72fed1000-56d72fed2000 r--p 00000000 103:02 2361717                   /home/pc9/sec2211-assignment3/program
+56d72fed2000-56d72fed3000 r-xp 00001000 103:02 2361717                   /home/pc9/sec2211-assignment3/program
+56d72fed3000-56d72fed4000 r--p 00002000 103:02 2361717                   /home/pc9/sec2211-assignment3/program
+56d72fed4000-56d72fed5000 r--p 00002000 103:02 2361717                   /home/pc9/sec2211-assignment3/program
+56d72fed5000-56d72fed6000 rw-p 00003000 103:02 2361717                   /home/pc9/sec2211-assignment3/program
+56d736ce0000-56d736d01000 rw-p 00000000 00:00 0                          [heap]
+70b1be600000-70b1be628000 r--p 00000000 103:02 3933740                   /usr/lib/x86_64-linux-gnu/libc.so.6
+70b1be628000-70b1be7c0000 r-xp 00028000 103:02 3933740                   /usr/lib/x86_64-linux-gnu/libc.so.6
+70b1be7c0000-70b1be80e000 r--p 001c0000 103:02 3933740                   /usr/lib/x86_64-linux-gnu/libc.so.6
+70b1be80e000-70b1be812000 r--p 0020e000 103:02 3933740                   /usr/lib/x86_64-linux-gnu/libc.so.6
+70b1be812000-70b1be814000 rw-p 00212000 103:02 3933740                   /usr/lib/x86_64-linux-gnu/libc.so.6
+70b1be814000-70b1be821000 rw-p 00000000 00:00 0 
+70b1be905000-70b1be908000 rw-p 00000000 00:00 0 
+70b1be91c000-70b1be91e000 rw-p 00000000 00:00 0 
+70b1be91e000-70b1be922000 r--p 00000000 00:00 0                          [vvar]
+70b1be922000-70b1be924000 r--p 00000000 00:00 0                          [vvar_vclock]
+70b1be924000-70b1be926000 r-xp 00000000 00:00 0                          [vdso]
+70b1be926000-70b1be927000 r--p 00000000 103:02 3933737                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+70b1be927000-70b1be956000 r-xp 00001000 103:02 3933737                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+70b1be956000-70b1be961000 r--p 00030000 103:02 3933737                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+70b1be961000-70b1be963000 r--p 0003b000 103:02 3933737                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+70b1be963000-70b1be964000 rw-p 0003d000 103:02 3933737                   /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+70b1be964000-70b1be965000 rw-p 00000000 00:00 0 
+7ffe5851b000-7ffe5853c000 rw-p 00000000 00:00 0                          [stack]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

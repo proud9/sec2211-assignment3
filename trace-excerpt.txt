@@ -1,0 +1,11 @@
+11413 openat(AT_FDCWD, "assignment-output.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+11413 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7d0fcb794a10) = 11417
+11413 wait4(11417 <unfinished ...>
+11417 execve("/usr/local/sbin/ls", ["ls", "-l", "assignment-output.txt"], 0x7ffef43884e8 /* 53 vars */) = -1 ENOENT (No such file or directory)
+11417 execve("/usr/local/bin/ls", ["ls", "-l", "assignment-output.txt"], 0x7ffef43884e8 /* 53 vars */) = -1 ENOENT (No such file or directory)
+11417 execve("/usr/sbin/ls", ["ls", "-l", "assignment-output.txt"], 0x7ffef43884e8 /* 53 vars */) = -1 ENOENT (No such file or directory)
+11417 execve("/usr/bin/ls", ["ls", "-l", "assignment-output.txt"], 0x7ffef43884e8 /* 53 vars */) = 0
+11417 statx(AT_FDCWD, "assignment-output.txt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0664, stx_size=30, ...}) = 0
+11417 listxattr("assignment-output.txt", "", 4096) = 0
+11417 listxattr("assignment-output.txt", "", 4096) = 0
+11413 <... wait4 resumed>, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 11417

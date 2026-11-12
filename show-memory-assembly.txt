@@ -1,0 +1,85 @@
+
+program:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000001369 <show_memory>:
+    1369:	f3 0f 1e fa          	endbr64
+    136d:	55                   	push   rbp
+    136e:	48 89 e5             	mov    rbp,rsp
+    1371:	48 83 ec 20          	sub    rsp,0x20
+    1375:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    137c:	00 00 
+    137e:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    1382:	31 c0                	xor    eax,eax
+    1384:	c7 45 ec 07 00 00 00 	mov    DWORD PTR [rbp-0x14],0x7
+    138b:	bf 04 00 00 00       	mov    edi,0x4
+    1390:	e8 4b fe ff ff       	call   11e0 <malloc@plt>
+    1395:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+    1399:	48 83 7d f0 00       	cmp    QWORD PTR [rbp-0x10],0x0
+    139e:	75 19                	jne    13b9 <show_memory+0x50>
+    13a0:	48 8d 05 61 0c 00 00 	lea    rax,[rip+0xc61]        # 2008 <_IO_stdin_used+0x8>
+    13a7:	48 89 c7             	mov    rdi,rax
+    13aa:	e8 71 fe ff ff       	call   1220 <perror@plt>
+    13af:	bf 01 00 00 00       	mov    edi,0x1
+    13b4:	e8 87 fe ff ff       	call   1240 <exit@plt>
+    13b9:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    13bd:	c7 00 63 00 00 00    	mov    DWORD PTR [rax],0x63
+    13c3:	e8 c8 fd ff ff       	call   1190 <getpid@plt>
+    13c8:	48 98                	cdqe
+    13ca:	48 8d 15 3e 0c 00 00 	lea    rdx,[rip+0xc3e]        # 200f <_IO_stdin_used+0xf>
+    13d1:	48 89 c6             	mov    rsi,rax
+    13d4:	48 89 d7             	mov    rdi,rdx
+    13d7:	b8 00 00 00 00       	mov    eax,0x0
+    13dc:	e8 df fd ff ff       	call   11c0 <printf@plt>
+    13e1:	8b 05 29 2c 00 00    	mov    eax,DWORD PTR [rip+0x2c29]        # 4010 <initialized_global>
+    13e7:	48 8d 35 22 2c 00 00 	lea    rsi,[rip+0x2c22]        # 4010 <initialized_global>
+    13ee:	48 8d 0d 2b 0c 00 00 	lea    rcx,[rip+0xc2b]        # 2020 <_IO_stdin_used+0x20>
+    13f5:	89 c2                	mov    edx,eax
+    13f7:	48 89 cf             	mov    rdi,rcx
+    13fa:	b8 00 00 00 00       	mov    eax,0x0
+    13ff:	e8 bc fd ff ff       	call   11c0 <printf@plt>
+    1404:	8b 05 1a 2c 00 00    	mov    eax,DWORD PTR [rip+0x2c1a]        # 4024 <uninitialized_global>
+    140a:	48 8d 35 13 2c 00 00 	lea    rsi,[rip+0x2c13]        # 4024 <uninitialized_global>
+    1411:	48 8d 0d 28 0c 00 00 	lea    rcx,[rip+0xc28]        # 2040 <_IO_stdin_used+0x40>
+    1418:	89 c2                	mov    edx,eax
+    141a:	48 89 cf             	mov    rdi,rcx
+    141d:	b8 00 00 00 00       	mov    eax,0x0
+    1422:	e8 99 fd ff ff       	call   11c0 <printf@plt>
+    1427:	8b 55 ec             	mov    edx,DWORD PTR [rbp-0x14]
+    142a:	48 8d 45 ec          	lea    rax,[rbp-0x14]
+    142e:	48 8d 0d 2c 0c 00 00 	lea    rcx,[rip+0xc2c]        # 2061 <_IO_stdin_used+0x61>
+    1435:	48 89 c6             	mov    rsi,rax
+    1438:	48 89 cf             	mov    rdi,rcx
+    143b:	b8 00 00 00 00       	mov    eax,0x0
+    1440:	e8 7b fd ff ff       	call   11c0 <printf@plt>
+    1445:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1449:	8b 10                	mov    edx,DWORD PTR [rax]
+    144b:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    144f:	48 8d 0d 26 0c 00 00 	lea    rcx,[rip+0xc26]        # 207c <_IO_stdin_used+0x7c>
+    1456:	48 89 c6             	mov    rsi,rax
+    1459:	48 89 cf             	mov    rdi,rcx
+    145c:	b8 00 00 00 00       	mov    eax,0x0
+    1461:	e8 5a fd ff ff       	call   11c0 <printf@plt>
+    1466:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    146a:	48 89 c7             	mov    rdi,rax
+    146d:	e8 ee fc ff ff       	call   1160 <free@plt>
+    1472:	90                   	nop
+    1473:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1477:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    147e:	00 00 
+    1480:	74 05                	je     1487 <show_memory+0x11e>
+    1482:	e8 29 fd ff ff       	call   11b0 <__stack_chk_fail@plt>
+    1487:	c9                   	leave
+    1488:	c3                   	ret
+
+Disassembly of section .fini:
